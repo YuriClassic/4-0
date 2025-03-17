@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'inter';
+    src: local('Inter-SemiBold'), local('Inter SemiBold'),
+        url(../font/Inter-SemiBold.ttf) format('ttf');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'inter';
+    src: local('Inter-Bold'), local('Inter Bold'),
+        url(../font/Inter-Bold.ttf) format('ttf');
+    font-weight: 700;
+    font-display: swap;
+}

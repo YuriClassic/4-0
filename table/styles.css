@@ -1,0 +1,155 @@
+.overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+    z-index: 5;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.table-container {
+    overflow-x: auto; /* Включить горизонтальную прокрутку */
+}
+
+table {
+    width: 100%;
+    min-width: 600px; 
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase; 
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 5%;
+    color: #6E6893;
+}
+
+td {
+    padding: 8px;
+}
+
+.filter-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#searchInput {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#filterButton {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#totalCost {
+    color: #6E6893;
+    font-family: Inter;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+}
+#addProductButton {
+    padding: 10px 15px;
+    margin-right: 15px; 
+    width: 181;
+    height: 39;
+    border-radius: 6px;
+    border: none;
+    background: #6D5BD0;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+#addProductButton:hover {
+    opacity: 0.6; /* Прозрачность при наведении */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* Размещает элементы по противоположным углам */
+    align-items: center; /* Центрирует по вертикали */
+    border-bottom: 2px solid #C6C2DE; /* Подчеркивание линии */
+    padding: 10px 0; /* Отступы сверху и снизу */
+    margin-bottom: 20px; /* Отступ снизу для расстояния до таблицы */
+}
+
+.cms-title {
+    font-size: 24px; 
+    margin: 0; /* Убираем отступы по бокам */
+    color: #6E6893;
+
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Размещаем элементы пагинации справа */
+    align-items: center; /* Центрируем по вертикали */
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 12px;
+    color: #6E6893;
+}
+
+.pagination label, .pagination span {
+    margin-right: 10px;
+}
+
+button {
+    padding: 6px 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    border: none;
+}
+select {
+    border: none;
+}
+
+.add-btn:hover {
+    opacity: 0.6; /* Прозрачность при наведении */
+}
+
+
+
+.search-container {
+    position: relative; /* Контекст позиционирования для иконки */
+}
+
+#searchInput {
+    width: 392px;  
+    height: 40px;  
+    padding-left: 40px; 
+}
+
+.search-icon {
+    position: absolute; /* Абсолютное позиционирование иконки */
+    left: 10px;      
+    top: 50%;         
+    transform: translateY(-50%); 
+    pointer-events: none;  /* Запретить иконке захватывать события мыши */
+}

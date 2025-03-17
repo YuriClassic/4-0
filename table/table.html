@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>table</title>
+</head>
+<body>
+    <div id="overlay" class="overlay"></div>
+
+    <div id="modal" class="modal">
+        <form id="productForm">
+            <h2>Добавить товар</h2>
+            <label for="productName">Название товара:</label>
+            <input type="text" id="productName" required>
+            
+            <label for="productPrice">Цена:</label>
+            <input type="number" id="productPrice" required>
+            
+            <label for="productDescription">Описание:</label>
+            <textarea id="productDescription" required></textarea>
+    
+            <button type="submit">Сохранить</button>
+            <button type="button" id="closeModal">Закрыть</button>
+        </form>
+    </div>
+    
+    <div class="header">
+        <h1 class="cms-title">CMS</h1>
+        <div id="totalCost" class="total-cost">Итоговая стоимость: $900.00</div> 
+    </div>
+    <div class="filter-section">
+        <button id="filterButton">
+            <img src="/img/filter.svg" alt="Фильтр изображение" >Фильтр
+        </button>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Поиск по наименованию и категории">
+            <label for="searchInput" class="search-icon">
+                <img src="/img/Search.svg" alt="Поиск">
+            </label>
+        </div>
+        <button id="addProductButton">Добавить товар</button>
+    </div>
+    <div class="table-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Наименование</th>
+                    <th>Категория</th>
+                    <th>Ед/Изм</th>
+                    <th>Количество</th>
+                    <th>Цена</th>
+                    <th>Итог</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="carbon no image">
+                        <img src="/img/carbon_no-image.svg" alt="Картинка без изображения" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>937295527</td>
+                    <td>Настольная игра “На 4-х ногах”</td>
+                    <td>Настольные игры</td>
+                    <td>шт</td>
+                    <td>12</td>
+                    <td>$14</td>
+                    <td>$168</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>246016548</td>
+                    <td>Навигационная система Soundmax</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>$500</td>
+                    <td>
+                        <button class="btn add-btn" aria-label="clarity picture line">
+                        <img src="/img/clarity_picture-line.svg" alt="Картинка с изображением" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="edit">
+                        <img src="/img/pencial_paper.svg" alt="Редактировать" ></button>
+                    </td>
+                    <td>
+                        <button class="btn add-btn" aria-label="delete outlined">
+                        <img src="/img/ant-design_delete-outlined.svg" alt="Удалить выделенное" ></button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <label for="itemsPerPage">Показывать на странице:</label>
+            <select id="itemsPerPage">
+                <option value="10">10</option>
+                <option value="25">25</option>
+                <option value="50">50</option>
+            </select>
+            <span id="pageInfo">1-10 of 276</span>
+            <button id="prevButton">&lt;</button>
+            <button id="nextButton">&gt;</button>
+        </div>
+    </div>
+</body>
+</html>

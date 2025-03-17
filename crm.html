@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="./font/Inter-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="./font/Inter-Bold.ttf" as="font" type="font/ttf" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Добавить товар</title>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="modal">
+            <button class="modal__btn close-btn" aria-label="Закрыть"></button>
+            <div class="add-item-button">
+                <button class="btn add-btn" aria-label="Добавить товар">
+                    <img src="img/pencial_paper.svg" alt="Добавить">
+                </button>
+            </div>
+            <form action="https://jsonplaceholder.typicode.com/posts" class="form" method="post">
+                <legend class="form__legend">
+                    Добавить товар
+                </legend>
+                <fieldset class="form__fieldset">
+                    <div class="item item1">
+                        <label for="title" class="form__label">Наименование</label>
+                        <input name="title" id="title" type="text" class="form__input">
+                        <div class="item item3">
+                            <label for="category" class="form__label">Категория</label>
+                            <input name="category" id="category" type="text" class="form__input">
+                        </div> 
+                    </div>
+                    <div class="item item2">
+                        <label for="description" class="form__label">Описание</label>
+                        <textarea class="form__input form__input-description" name="description" id="description"></textarea>
+                    </div>
+                    <div class="item item4">
+                        <label for="units" class="form__label">Единицы измерения</label>
+                        <input name="units" id="units" type="text" class="form__input">
+                        <div class="item item6">
+                            <label for="discount" class="form__label">Дисконт</label>
+                            <div class="form__group discount-group">
+                                <input class="form__checkbox" type="checkbox">
+                                <input class="discount-group__input" disabled name="discount" type="number">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item5">
+                        <label for="quantity" class="form__label">Количество</label>
+                        <input name="quantity" id="quantity" type="number" class="form__input"> 
+                        <div class="item item7">
+                            <label for="price" class="form__label">Цена</label>
+                            <input name="price" id="price" type="number" class="form__input">
+                        </div>
+                    </div>
+                    <div class="image-upload">
+                        <button class="btn form-btn-file" type="file">Добавить изображение</button>
+                    </div>
+                </fieldset>
+                <div class="footer">
+                    <div id="totalCost" class="total-cost">Итоговая стоимость: $900.00</div> 
+                    <button class="btn form__btn" type="submit">Добавить товар</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
